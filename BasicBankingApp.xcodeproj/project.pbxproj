@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		667FE734E2D4F12E4AACA49E /* Pods_BasicBankingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E8B85D52AE467FB65CF989 /* Pods_BasicBankingApp.framework */; };
+		CE0586CD27FB740100E857B6 /* SQLiteDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0586CC27FB740100E857B6 /* SQLiteDataBase.swift */; };
+		CE0586CF27FB743A00E857B6 /* SQLiteCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0586CE27FB743A00E857B6 /* SQLiteCommands.swift */; };
+		CE0586D527FB844000E857B6 /* Ex+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0586D427FB844000E857B6 /* Ex+UIViewController.swift */; };
+		CE2D07B828004C16004DDC74 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D07B728004C16004DDC74 /* UsersViewController.swift */; };
+		CE2D07BA28004FD7004DDC74 /* UserSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D07B928004FD7004DDC74 /* UserSelectViewController.swift */; };
+		CE2D07BC28004FF1004DDC74 /* UserSelectStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2D07BB28004FF1004DDC74 /* UserSelectStoryboard.storyboard */; };
+		CE2D07BF28005471004DDC74 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D07BE28005471004DDC74 /* TransactionsViewController.swift */; };
+		CE2D07C12800558A004DDC74 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D07C02800558A004DDC74 /* Transaction.swift */; };
+		CE2D07C628005D30004DDC74 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D07C428005D30004DDC74 /* TransactionTableViewCell.swift */; };
+		CE2D07C728005D30004DDC74 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2D07C528005D30004DDC74 /* TransactionTableViewCell.xib */; };
+		CE2D07C928006631004DDC74 /* TransactionSQLiteDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D07C828006631004DDC74 /* TransactionSQLiteDataBase.swift */; };
+		CE2D07CB2800675F004DDC74 /* TransactionSQLiteCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D07CA2800675F004DDC74 /* TransactionSQLiteCommands.swift */; };
+		CE2FC98A27FE41F30013A7A5 /* UserDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2FC98927FE41F30013A7A5 /* UserDetailsViewController.storyboard */; };
+		CE2FC98E27FE4AA60013A7A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2FC98D27FE4AA60013A7A5 /* LaunchScreen.xib */; };
+		CE2FC99027FE55B60013A7A5 /* LaunchScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2FC98F27FE55B60013A7A5 /* LaunchScreenManager.swift */; };
+		CE675A5D27F8D58D0089D370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE675A5C27F8D58D0089D370 /* AppDelegate.swift */; };
+		CE675A5F27F8D58D0089D370 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE675A5E27F8D58D0089D370 /* SceneDelegate.swift */; };
+		CE675A6427F8D58D0089D370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE675A6227F8D58D0089D370 /* Main.storyboard */; };
+		CE675A6627F8D58E0089D370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE675A6527F8D58E0089D370 /* Assets.xcassets */; };
+		CE675A7127F8D6710089D370 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE675A7027F8D6710089D370 /* User.swift */; };
+		CE675A7327F8D7B50089D370 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE675A7227F8D7B50089D370 /* UsersTableViewController.swift */; };
+		CE675A7627F8EB260089D370 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE675A7427F8EB260089D370 /* UserTableViewCell.swift */; };
+		CE675A7727F8EB260089D370 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE675A7527F8EB260089D370 /* UserTableViewCell.xib */; };
+		CE675A7927F8FDE90089D370 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE675A7827F8FDE90089D370 /* UserDetailsViewController.swift */; };
+		CED6AF6227FB2CF60079CF20 /* UserSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AF6027FB2CF60079CF20 /* UserSelectTableViewController.swift */; };
+		CED6AF6327FB2CF60079CF20 /* UserSelectTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED6AF6127FB2CF60079CF20 /* UserSelectTableViewController.xib */; };
+		CED6AF6527FB30920079CF20 /* showSelectedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AF6427FB30920079CF20 /* showSelectedUser.swift */; };
+		CEE5DBB727FC87E1002E8E1D /* Ex+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5DBB627FC87E1002E8E1D /* Ex+UILabel.swift */; };
+		CEE5DBB927FC8B91002E8E1D /* Ex+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5DBB827FC8B91002E8E1D /* Ex+UITextField.swift */; };
+		CEE5DBBB27FC8C9C002E8E1D /* Ex+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5DBBA27FC8C9C002E8E1D /* Ex+UIButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		67E8B85D52AE467FB65CF989 /* Pods_BasicBankingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicBankingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0586CC27FB740100E857B6 /* SQLiteDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDataBase.swift; sourceTree = "<group>"; };
+		CE0586CE27FB743A00E857B6 /* SQLiteCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteCommands.swift; sourceTree = "<group>"; };
+		CE0586D427FB844000E857B6 /* Ex+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UIViewController.swift"; sourceTree = "<group>"; };
+		CE2D07B728004C16004DDC74 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		CE2D07B928004FD7004DDC74 /* UserSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectViewController.swift; sourceTree = "<group>"; };
+		CE2D07BB28004FF1004DDC74 /* UserSelectStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSelectStoryboard.storyboard; sourceTree = "<group>"; };
+		CE2D07BE28005471004DDC74 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		CE2D07C02800558A004DDC74 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		CE2D07C428005D30004DDC74 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		CE2D07C528005D30004DDC74 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
+		CE2D07C828006631004DDC74 /* TransactionSQLiteDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSQLiteDataBase.swift; sourceTree = "<group>"; };
+		CE2D07CA2800675F004DDC74 /* TransactionSQLiteCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSQLiteCommands.swift; sourceTree = "<group>"; };
+		CE2FC98927FE41F30013A7A5 /* UserDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetailsViewController.storyboard; sourceTree = "<group>"; };
+		CE2FC98D27FE4AA60013A7A5 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		CE2FC98F27FE55B60013A7A5 /* LaunchScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenManager.swift; sourceTree = "<group>"; };
+		CE675A5927F8D58D0089D370 /* BasicBankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicBankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE675A5C27F8D58D0089D370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE675A5E27F8D58D0089D370 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE675A6327F8D58D0089D370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE675A6527F8D58E0089D370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE675A6A27F8D58E0089D370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE675A7027F8D6710089D370 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE675A7227F8D7B50089D370 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		CE675A7427F8EB260089D370 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		CE675A7527F8EB260089D370 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		CE675A7827F8FDE90089D370 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		CED6AF6027FB2CF60079CF20 /* UserSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectTableViewController.swift; sourceTree = "<group>"; };
+		CED6AF6127FB2CF60079CF20 /* UserSelectTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserSelectTableViewController.xib; sourceTree = "<group>"; };
+		CED6AF6427FB30920079CF20 /* showSelectedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showSelectedUser.swift; sourceTree = "<group>"; };
+		CEE5DBB627FC87E1002E8E1D /* Ex+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UILabel.swift"; sourceTree = "<group>"; };
+		CEE5DBB827FC8B91002E8E1D /* Ex+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UITextField.swift"; sourceTree = "<group>"; };
+		CEE5DBBA27FC8C9C002E8E1D /* Ex+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UIButton.swift"; sourceTree = "<group>"; };
+		E9DCE1854A8B1C3768DCECFE /* Pods-BasicBankingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicBankingApp.debug.xcconfig"; path = "Target Support Files/Pods-BasicBankingApp/Pods-BasicBankingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F792754EC09C8BD2FE17BC2E /* Pods-BasicBankingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicBankingApp.release.xcconfig"; path = "Target Support Files/Pods-BasicBankingApp/Pods-BasicBankingApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE675A5627F8D58D0089D370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667FE734E2D4F12E4AACA49E /* Pods_BasicBankingApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		652A5F9279CECCB3751707D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9DCE1854A8B1C3768DCECFE /* Pods-BasicBankingApp.debug.xcconfig */,
+				F792754EC09C8BD2FE17BC2E /* Pods-BasicBankingApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE0586D027FB746900E857B6 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				CE0586CC27FB740100E857B6 /* SQLiteDataBase.swift */,
+				CE0586CE27FB743A00E857B6 /* SQLiteCommands.swift */,
+				CE2D07C828006631004DDC74 /* TransactionSQLiteDataBase.swift */,
+				CE2D07CA2800675F004DDC74 /* TransactionSQLiteCommands.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		CE0586D127FB77F100E857B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE0586D227FB77FD00E857B6 /* POJOs */,
+				CE0586D027FB746900E857B6 /* DataBase */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE0586D227FB77FD00E857B6 /* POJOs */ = {
+			isa = PBXGroup;
+			children = (
+				CE675A7027F8D6710089D370 /* User.swift */,
+				CE2D07C02800558A004DDC74 /* Transaction.swift */,
+			);
+			path = POJOs;
+			sourceTree = "<group>";
+		};
+		CE0586D327FB840F00E857B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE0586D427FB844000E857B6 /* Ex+UIViewController.swift */,
+				CEE5DBB627FC87E1002E8E1D /* Ex+UILabel.swift */,
+				CEE5DBB827FC8B91002E8E1D /* Ex+UITextField.swift */,
+				CEE5DBBA27FC8C9C002E8E1D /* Ex+UIButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE285FB427FBBA6B00649153 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CE675A6227F8D58D0089D370 /* Main.storyboard */,
+				CE2D07BD280053BE004DDC74 /* TransactionsTable */,
+				CE285FB527FBBAB400649153 /* UsersTable */,
+				CE285FB627FBBADF00649153 /* UserDetails */,
+				CE285FB727FBBB0700649153 /* UserSelectTable */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CE285FB527FBBAB400649153 /* UsersTable */ = {
+			isa = PBXGroup;
+			children = (
+				CE675A7227F8D7B50089D370 /* UsersTableViewController.swift */,
+				CE2D07B728004C16004DDC74 /* UsersViewController.swift */,
+				CE675A7427F8EB260089D370 /* UserTableViewCell.swift */,
+				CE675A7527F8EB260089D370 /* UserTableViewCell.xib */,
+			);
+			path = UsersTable;
+			sourceTree = "<group>";
+		};
+		CE285FB627FBBADF00649153 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CE675A7827F8FDE90089D370 /* UserDetailsViewController.swift */,
+				CE2FC98927FE41F30013A7A5 /* UserDetailsViewController.storyboard */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		CE285FB727FBBB0700649153 /* UserSelectTable */ = {
+			isa = PBXGroup;
+			children = (
+				CED6AF6027FB2CF60079CF20 /* UserSelectTableViewController.swift */,
+				CED6AF6127FB2CF60079CF20 /* UserSelectTableViewController.xib */,
+				CE2D07B928004FD7004DDC74 /* UserSelectViewController.swift */,
+				CE2D07BB28004FF1004DDC74 /* UserSelectStoryboard.storyboard */,
+			);
+			path = UserSelectTable;
+			sourceTree = "<group>";
+		};
+		CE285FB827FBBBB600649153 /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				CE675A5C27F8D58D0089D370 /* AppDelegate.swift */,
+				CE675A5E27F8D58D0089D370 /* SceneDelegate.swift */,
+			);
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
+		CE2D07BD280053BE004DDC74 /* TransactionsTable */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D07BE28005471004DDC74 /* TransactionsViewController.swift */,
+				CE2D07C428005D30004DDC74 /* TransactionTableViewCell.swift */,
+				CE2D07C528005D30004DDC74 /* TransactionTableViewCell.xib */,
+			);
+			path = TransactionsTable;
+			sourceTree = "<group>";
+		};
+		CE2FC98C27FE4A8E0013A7A5 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE2FC98D27FE4AA60013A7A5 /* LaunchScreen.xib */,
+				CE2FC98F27FE55B60013A7A5 /* LaunchScreenManager.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		CE675A5027F8D58D0089D370 = {
+			isa = PBXGroup;
+			children = (
+				CE675A5B27F8D58D0089D370 /* BasicBankingApp */,
+				CE675A5A27F8D58D0089D370 /* Products */,
+				652A5F9279CECCB3751707D4 /* Pods */,
+				DA974B83FB31811967A328B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE675A5A27F8D58D0089D370 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE675A5927F8D58D0089D370 /* BasicBankingApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE675A5B27F8D58D0089D370 /* BasicBankingApp */ = {
+			isa = PBXGroup;
+			children = (
+				CE2FC98C27FE4A8E0013A7A5 /* LaunchScreen */,
+				CE285FB827FBBBB600649153 /* AppSettings */,
+				CE285FB427FBBA6B00649153 /* Modules */,
+				CE0586D327FB840F00E857B6 /* Extensions */,
+				CE0586D127FB77F100E857B6 /* Model */,
+				CE675A6527F8D58E0089D370 /* Assets.xcassets */,
+				CE675A6A27F8D58E0089D370 /* Info.plist */,
+				CED6AF6427FB30920079CF20 /* showSelectedUser.swift */,
+			);
+			path = BasicBankingApp;
+			sourceTree = "<group>";
+		};
+		DA974B83FB31811967A328B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67E8B85D52AE467FB65CF989 /* Pods_BasicBankingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE675A5827F8D58D0089D370 /* BasicBankingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE675A6D27F8D58E0089D370 /* Build configuration list for PBXNativeTarget "BasicBankingApp" */;
+			buildPhases = (
+				4FC292CB4E0DA499C394B90C /* [CP] Check Pods Manifest.lock */,
+				CE675A5527F8D58D0089D370 /* Sources */,
+				CE675A5627F8D58D0089D370 /* Frameworks */,
+				CE675A5727F8D58D0089D370 /* Resources */,
+				21B4FCA987E9048BABEE40C4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicBankingApp;
+			productName = BasicBankingApp;
+			productReference = CE675A5927F8D58D0089D370 /* BasicBankingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE675A5127F8D58D0089D370 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					CE675A5827F8D58D0089D370 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = CE675A5427F8D58D0089D370 /* Build configuration list for PBXProject "BasicBankingApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE675A5027F8D58D0089D370;
+			productRefGroup = CE675A5A27F8D58D0089D370 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE675A5827F8D58D0089D370 /* BasicBankingApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE675A5727F8D58D0089D370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE675A7727F8EB260089D370 /* UserTableViewCell.xib in Resources */,
+				CE675A6627F8D58E0089D370 /* Assets.xcassets in Resources */,
+				CED6AF6327FB2CF60079CF20 /* UserSelectTableViewController.xib in Resources */,
+				CE675A6427F8D58D0089D370 /* Main.storyboard in Resources */,
+				CE2FC98E27FE4AA60013A7A5 /* LaunchScreen.xib in Resources */,
+				CE2FC98A27FE41F30013A7A5 /* UserDetailsViewController.storyboard in Resources */,
+				CE2D07C728005D30004DDC74 /* TransactionTableViewCell.xib in Resources */,
+				CE2D07BC28004FF1004DDC74 /* UserSelectStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21B4FCA987E9048BABEE40C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicBankingApp/Pods-BasicBankingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicBankingApp/Pods-BasicBankingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicBankingApp/Pods-BasicBankingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FC292CB4E0DA499C394B90C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BasicBankingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE675A5527F8D58D0089D370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE5DBBB27FC8C9C002E8E1D /* Ex+UIButton.swift in Sources */,
+				CE675A7127F8D6710089D370 /* User.swift in Sources */,
+				CE2D07BF28005471004DDC74 /* TransactionsViewController.swift in Sources */,
+				CE2D07C928006631004DDC74 /* TransactionSQLiteDataBase.swift in Sources */,
+				CEE5DBB727FC87E1002E8E1D /* Ex+UILabel.swift in Sources */,
+				CE675A5D27F8D58D0089D370 /* AppDelegate.swift in Sources */,
+				CE675A7927F8FDE90089D370 /* UserDetailsViewController.swift in Sources */,
+				CE2D07C628005D30004DDC74 /* TransactionTableViewCell.swift in Sources */,
+				CE2D07CB2800675F004DDC74 /* TransactionSQLiteCommands.swift in Sources */,
+				CE2D07B828004C16004DDC74 /* UsersViewController.swift in Sources */,
+				CEE5DBB927FC8B91002E8E1D /* Ex+UITextField.swift in Sources */,
+				CED6AF6527FB30920079CF20 /* showSelectedUser.swift in Sources */,
+				CE0586CD27FB740100E857B6 /* SQLiteDataBase.swift in Sources */,
+				CE675A7327F8D7B50089D370 /* UsersTableViewController.swift in Sources */,
+				CE2D07C12800558A004DDC74 /* Transaction.swift in Sources */,
+				CE2D07BA28004FD7004DDC74 /* UserSelectViewController.swift in Sources */,
+				CE0586CF27FB743A00E857B6 /* SQLiteCommands.swift in Sources */,
+				CE0586D527FB844000E857B6 /* Ex+UIViewController.swift in Sources */,
+				CED6AF6227FB2CF60079CF20 /* UserSelectTableViewController.swift in Sources */,
+				CE675A5F27F8D58D0089D370 /* SceneDelegate.swift in Sources */,
+				CE2FC99027FE55B60013A7A5 /* LaunchScreenManager.swift in Sources */,
+				CE675A7627F8EB260089D370 /* UserTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE675A6227F8D58D0089D370 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE675A6327F8D58D0089D370 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE675A6B27F8D58E0089D370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE675A6C27F8D58E0089D370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE675A6E27F8D58E0089D370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DCE1854A8B1C3768DCECFE /* Pods-BasicBankingApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BasicBankingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MohamedElkholy.BasicBankingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CE675A6F27F8D58E0089D370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F792754EC09C8BD2FE17BC2E /* Pods-BasicBankingApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BasicBankingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MohamedElkholy.BasicBankingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE675A5427F8D58D0089D370 /* Build configuration list for PBXProject "BasicBankingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE675A6B27F8D58E0089D370 /* Debug */,
+				CE675A6C27F8D58E0089D370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE675A6D27F8D58E0089D370 /* Build configuration list for PBXNativeTarget "BasicBankingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE675A6E27F8D58E0089D370 /* Debug */,
+				CE675A6F27F8D58E0089D370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE675A5127F8D58D0089D370 /* Project object */;
+}

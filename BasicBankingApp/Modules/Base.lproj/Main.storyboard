@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4f5-ui-8Iy">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Users View Controller-->
+        <scene sceneID="NGp-yR-ej3">
+            <objects>
+                <viewController id="izK-Je-qon" customClass="UsersViewController" customModule="BasicBankingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5HQ-oS-jy1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9Ij-aG-0SF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tHE-9y-aJl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tHE-9y-aJl" firstAttribute="trailing" secondItem="9Ij-aG-0SF" secondAttribute="trailing" id="Zjo-75-iLf"/>
+                            <constraint firstItem="tHE-9y-aJl" firstAttribute="bottom" secondItem="9Ij-aG-0SF" secondAttribute="bottom" id="hLH-D7-fa7"/>
+                            <constraint firstItem="9Ij-aG-0SF" firstAttribute="leading" secondItem="tHE-9y-aJl" secondAttribute="leading" id="oYh-fB-A3o"/>
+                            <constraint firstItem="9Ij-aG-0SF" firstAttribute="top" secondItem="tHE-9y-aJl" secondAttribute="top" id="yKE-hZ-Hlg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YK0-r5-rMM"/>
+                    <connections>
+                        <outlet property="tableView" destination="9Ij-aG-0SF" id="qOK-Av-UGx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXZ-0j-wnm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3368.115942028986" y="129.61956521739131"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="kIu-6T-TRN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nvz-yS-q84" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="person.circle" catalog="system" id="OOK-o3-oaA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DPa-6p-GUG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="izK-Je-qon" kind="relationship" relationship="rootViewController" id="Sd6-UM-QbP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FBb-fj-GnB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2460.8695652173915" y="129.61956521739131"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2zN-L3-YPU">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4f5-ui-8Iy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oMp-wA-Jrv">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nvz-yS-q84" kind="relationship" relationship="viewControllers" id="3HP-Vj-b2e"/>
+                        <segue destination="05W-s5-RZi" kind="relationship" relationship="viewControllers" id="nXf-lv-Se4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ksC-2O-DMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="466"/>
+        </scene>
+        <!--Transactions View Controller-->
+        <scene sceneID="wun-if-AlJ">
+            <objects>
+                <viewController storyboardIdentifier="TransactionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DtU-ko-gm7" customClass="TransactionsViewController" customModule="BasicBankingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JgB-0i-4CP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jwb-nd-8ZX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Krz-m3-pQb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Krz-m3-pQb" firstAttribute="trailing" secondItem="Jwb-nd-8ZX" secondAttribute="trailing" id="8ef-Qv-KZo"/>
+                            <constraint firstItem="Krz-m3-pQb" firstAttribute="bottom" secondItem="Jwb-nd-8ZX" secondAttribute="bottom" id="CYQ-JR-Tf3"/>
+                            <constraint firstItem="Jwb-nd-8ZX" firstAttribute="leading" secondItem="Krz-m3-pQb" secondAttribute="leading" id="CgT-ff-tXE"/>
+                            <constraint firstItem="Jwb-nd-8ZX" firstAttribute="top" secondItem="Krz-m3-pQb" secondAttribute="top" id="J5Y-Eo-bvd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zNA-oB-25B"/>
+                    <connections>
+                        <outlet property="tableView" destination="Jwb-nd-8ZX" id="qJo-j1-n67"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pab-Jc-1V9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3375.36231884058" y="831.52173913043487"/>
+        </scene>
+        <!--Transactions-->
+        <scene sceneID="II6-br-d17">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="05W-s5-RZi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Transactions" image="dollarsign.circle" catalog="system" id="a9n-HK-w9S"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mlg-Th-6AJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DtU-ko-gm7" kind="relationship" relationship="rootViewController" id="q5s-TE-rJT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrO-c6-ISZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468.1159420289855" y="831.52173913043487"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
